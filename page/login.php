@@ -2,8 +2,7 @@
 
 session_start();
 
-$cnx = mysqli_connect('localhost', 'root', 'codeurKiFFeur', 'Challenge') or
-die('error='.mysqli_connect_errno());
+include_once "connexion.php";
 
 $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
 $password = isset($_SESSION['password']) ? $_SESSION['password'] : '';

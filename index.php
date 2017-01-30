@@ -1,7 +1,6 @@
 <?php
 
-$cnx = mysqli_connect('localhost', 'root', 'codeurKiFFeur', 'Challenge') or
-die('error='.mysqli_connect_errno());
+include_once("page/connexion.php");
 
 $res = mysqli_query($cnx, 'SELECT * FROM custom WHERE id=1');
 $data = mysqli_fetch_assoc($res);

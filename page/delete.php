@@ -1,7 +1,7 @@
 <?php
 
-$cnx = mysqli_connect('localhost', 'root', 'codeurKiFFeur', 'Challenge') or
-die('error='.mysqli_connect_errno());
+include_once "connexion.php";
+
 
 $checkbox = isset($_POST['checkbox']);
 $checkbox = (int) $checkbox;

@@ -2,8 +2,7 @@
 
 session_start();
 
-$cnx = mysqli_connect('localhost', 'root', 'codeurKiFFeur', 'Challenge') or
-die('error='.mysqli_connect_errno());
+include_once "connexion.php";
 
 $pseudo = isset($_POST['Pseudo']) ? $_POST['Pseudo'] : '';
 $prenom = isset($_POST['Prenom']) ? $_POST['Prenom'] : '';

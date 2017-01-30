@@ -2,8 +2,7 @@
 
 session_start();
 
-$cnx = mysqli_connect('localhost', 'root', 'codeurKiFFeur', 'Challenge') or
-die('error='.mysqli_connect_errno());
+include_once "connexion.php";
 
   $coltitle = isset($_POST['coltitle']) ? $_POST['coltitle'] : '';
   $colnavbar = isset($_POST['colnavbar']) ? $_POST['colnavbar'] : '';

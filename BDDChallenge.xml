@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.5.4.1deb2ubuntu2
+- https://www.phpmyadmin.net
+-
+- Client :  localhost
+- Généré le :  Lun 30 Janvier 2017 à 14:12
+- Version du serveur :  5.7.17-0ubuntu0.16.04.1
+- Version de PHP :  7.0.13-0ubuntu0.16.04.1
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="Challenge" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="amis">
+                CREATE TABLE `amis` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `Avatar` varchar(100) NOT NULL,
+                  `Pseudo` varchar(30) NOT NULL,
+                  `Prenom` varchar(30) NOT NULL,
+                  `Naissance` varchar(10) NOT NULL,
+                  `Jeux` varchar(30) NOT NULL,
+                  `Mail` varchar(50) NOT NULL,
+                  `valider` int(11) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="administrateur">
+                CREATE TABLE `challenge` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `username` varchar(30) NOT NULL,
+                  `password` varchar(30) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="custom">
+                CREATE TABLE `custom` (
+                  `id` int(11) NOT NULL AUTO_INCREMENT,
+                  `title` varchar(30) NOT NULL,
+                  `navbar` varchar(30) NOT NULL,
+                  `url` varchar(30) NOT NULL,
+                  `button` varchar(30) NOT NULL,
+                  `arrow` int(11) NOT NULL,
+                  `fixed` int(11) NOT NULL,
+                  `snow` int(11) NOT NULL,
+                  `font` varchar(30) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Base de données :  'Challenge'
+    -->
+    <database name="Challenge">
+        <!-- Table amis -->
+        <table name="amis">
+            <column name="id">13</column>
+            <column name="Avatar">classe907.jpg</column>
+            <column name="Pseudo">Dodo</column>
+            <column name="Prenom">Aledorian</column>
+            <column name="Naissance">05/11/1997</column>
+            <column name="Jeux">LoL</column>
+            <column name="Mail">aledorian@gmail.com</column>
+            <column name="valider">1</column>
+        </table>
+        <table name="amis">
+            <column name="id">14</column>
+            <column name="Avatar">jojo masque50.jpg</column>
+            <column name="Pseudo">vbn</column>
+            <column name="Prenom">gbhn</column>
+            <column name="Naissance">20/20/2000</column>
+            <column name="Jeux">fghjk</column>
+            <column name="Mail">sdfgh@gmail.com</column>
+            <column name="valider">1</column>
+        </table>
+        <table name="amis">
+            <column name="id">15</column>
+            <column name="Avatar">jojo masque849.jpg</column>
+            <column name="Pseudo">JEDI</column>
+            <column name="Prenom">Anakin</column>
+            <column name="Naissance">20/20/2000</column>
+            <column name="Jeux">wow</column>
+            <column name="Mail">aledo@gmail.com</column>
+            <column name="valider">1</column>
+        </table>
+        <!-- Table challenge -->
+        <table name="administrateur">
+            <column name="id">1</column>
+            <column name="username">admin</column>
+            <column name="password">admin</column>
+        </table>
+        <!-- Table custom -->
+        <table name="custom">
+            <column name="id">1</column>
+            <column name="title">red</column>
+            <column name="navbar">black</column>
+            <column name="url">Deeppink</column>
+            <column name="button">blue</column>
+            <column name="arrow">0</column>
+            <column name="fixed">0</column>
+            <column name="snow">1</column>
+            <column name="font">Lemonada</column>
+        </table>
+    </database>
+</pma_xml_export>

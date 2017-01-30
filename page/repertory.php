@@ -2,9 +2,8 @@
 
 session_start();
 include_once 'navbar.php';
+include_once 'connexion.php';
 
-$cnx = mysqli_connect('localhost', 'root', 'codeurKiFFeur', 'Challenge') or
-die('error='.mysqli_connect_errno());
 
 $res = mysqli_query($cnx, 'SELECT Avatar, Pseudo, Jeux, Mail, Prenom, Naissance FROM amis WHERE valider = 1');
 $data = mysqli_fetch_assoc($res);

@@ -2,8 +2,8 @@
 
 session_start();
 
-$cnx = mysqli_connect('localhost', 'root', 'codeurKiFFeur', 'Challenge') or
-die('error='.mysqli_connect_errno());
+include_once "connexion.php";
+
 $numid = $_POST['modif'];
 
 $res = mysqli_query($cnx, "SELECT * FROM amis WHERE id='$numid'");
