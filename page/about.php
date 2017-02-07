@@ -43,7 +43,7 @@ include_once 'navbar.php';
             <div class="col-lg-12">
                 <h1 class="page-header">About</h1>
                 <ol class="breadcrumb">
-                    <li><a href="../index.html">Home</a>
+                    <li><a href="../index.php">Home</a>
                     </li>
                     <li class="active">About</li>
                 </ol>
@@ -107,7 +107,7 @@ include_once 'navbar.php';
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
-         <?php include_once 'snow.php'?>
+         <?php include_once 'snow.php' ?>
 
 </body>
 

@@ -46,7 +46,7 @@ include_once 'navbar.php';
             <div class="col-lg-12">
                 <h1 class="page-header">Contact</h1>
                 <ol class="breadcrumb">
-                    <li><a href="../index.html">Home</a>
+                    <li><a href="../index.php">Home</a>
                     </li>
                     <li class="active">Contact</li>
                 </ol>

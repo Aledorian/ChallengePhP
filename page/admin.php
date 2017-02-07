@@ -117,7 +117,7 @@ $data = mysqli_fetch_assoc($res);
 
       <form action="customization_check.php" method="POST">
       <label for='coltitle'> Title's color : </label>
-      <input type="text" name="coltitle" value=""/><br>
+      <input  type="text" name="coltitle" value=""/><br>
 
       <label for='colnavbar'> Navbar color : </label>
       <input type="text" name="colnavbar" value=""/><br>

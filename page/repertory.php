@@ -59,7 +59,7 @@ $data = mysqli_fetch_assoc($res);
             <div class="col-lg-12">
                 <h1 class="page-header">Repertory</h1>
                 <ol class="breadcrumb">
-                    <li><a href="../index.html">Home</a>
+                    <li><a href="../index.php">Home</a>
                     </li>
                     <li class="active">Portfolio</li>
                 </ol>

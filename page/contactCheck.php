@@ -73,4 +73,3 @@ $filelist = scandir($dir);
 array_splice($filelist, 0, 2);
 
 header('location:admin.php');
-;
